@@ -1,0 +1,51 @@
+# Aircraft Configuration
+
+aircraft:
+  - name: Cessna 172
+    mass: 1157  # kg
+    wing_area: 16.17  # m²
+    wing_span: 11.0  # m
+    mean_chord: 1.47  # m
+    
+    # Aerodynamic coefficients
+    aerodynamic:
+      cl_max: 1.4
+      cd0: 0.027
+      k: 0.0525
+      stall_angle: 16.0  # degrees
+    
+    # Engine specifications
+    engine:
+      max_thrust: 41600  # N
+      specific_fuel_consumption: 0.085e-6  # kg/(N·s)
+      max_fuel_capacity: 122  # kg
+    
+    # Inertia (kg·m²)
+    inertia:
+      ixx: 963.0
+      iyy: 1087.0
+      izz: 1946.0
+      ixz: 0.0
+
+  - name: Boeing 737
+    mass: 41413  # kg
+    wing_area: 122.6  # m²
+    wing_span: 35.8  # m
+    mean_chord: 3.42  # m
+    
+    aerodynamic:
+      cl_max: 1.5
+      cd0: 0.018
+      k: 0.045
+      stall_angle: 15.0
+    
+    engine:
+      max_thrust: 2 * 26500  # N (two engines)
+      specific_fuel_consumption: 0.075e-6
+      max_fuel_capacity: 26730  # kg
+    
+    inertia:
+      ixx: 2500000.0
+      iyy: 6500000.0
+      izz: 8500000.0
+      ixz: 0.0

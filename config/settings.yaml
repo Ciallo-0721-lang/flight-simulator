@@ -1,0 +1,34 @@
+# Flight Simulator Configuration
+
+# Display Settings
+display:
+  screen_width: 1280
+  screen_height: 720
+  fps: 60
+  fullscreen: false
+  vsync: true
+
+# Physics Settings
+physics:
+  fps: 120
+  gravity: 9.81
+
+# Graphics Settings
+graphics:
+  antialiasing: true
+  terrain_lod: 5
+  draw_distance: 10000
+
+# Audio Settings
+audio:
+  master_volume: 1.0
+  music_volume: 0.7
+  sfx_volume: 0.8
+  engine_sound: true
+
+# Game Settings
+game:
+  difficulty: normal
+  realistic_failures: false
+  unlimited_fuel: false
+  automatic_pilot: false
